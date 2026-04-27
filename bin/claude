@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+exec proot \
+  -b /data/data/com.termux/files/usr/etc/resolv.conf:/etc/resolv.conf \
+  -b /data/data/com.termux/files/usr/etc/tls/cert.pem:/etc/ssl/certs/ca-certificates.crt \
+  env -u LD_PRELOAD \
+  /data/data/com.termux/files/usr/lib/claude-code/claude-musl "$@"
