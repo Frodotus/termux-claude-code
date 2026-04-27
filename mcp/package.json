@@ -1,0 +1,9 @@
+{
+  "name": "termux-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": { "termux-mcp": "./server.js" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  }
+}
